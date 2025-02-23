@@ -1,0 +1,12 @@
+POST http://localhost:8080/api/products HTTP/1.1
+content-type: application/json
+
+{
+     "name": "test",
+     "price": 123,
+     "description": "test test"
+     
+}
+
+### Lấy danh sách sản phẩm
+GET http://localhost:8080/api/products HTTP/1.1
