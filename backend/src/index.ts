@@ -15,6 +15,15 @@ app.get('/api/v1', (req: Request, res: Response) => {
   res.send({name: 'xiu'});
 });
 
+app.get('/api/v1/products', (req: Request, res: Response) => {
+  const products = [
+    {name: 'xiu'},
+    {name: 'thanhvinh'},
+
+  ]
+  res.json(products)
+});
+
 app.listen(port, () => {
   console.log(`Server is Fire at https://localhost:${port}`);
 });
